@@ -1,0 +1,15 @@
+[
+    {
+      "id": 1,
+      "word": "Google",
+      "icon": "google",
+      "description": "Redesigning Google Homepage was too easy."
+    },
+    {
+      "id": 2,
+      "word": "Discord",
+      "icon": "discord",
+      "description": "Redesigning Discord Homepage was too easy."
+    }
+    
+  ]
