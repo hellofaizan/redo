@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }) {
         <meta name="theme-color" content="#171717" />
         <meta
           name="keywords"
-          content="HelloFaizan, Faizan Blog, HelloFaizan blog, CuriousFaizan, web developer, github, typescript, nextjs"
+          content="HelloFaizan, Faizan Blog, HelloFaizan blog, CuriousFaizan, web developer, github, typescript, nextjs redesigned every website redesign google redesign facebook redesign twitter redesign youtube redesign instagram redesign reddi"
         />
         <meta name="description" content="HelloFaizan - Send message to HelloFaizan" />
         <meta name="author" content="Hello Faizan" />
