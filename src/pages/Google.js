@@ -67,6 +67,28 @@ const Discord = () => {
           </div>
 
         </div>
+
+        {/* Footer */}
+        <div className="absolute bottom-0 bg-[#171717] w-screen py-3">
+          <div className="flex flex-col">
+            <p className='ml-5 text-[#a1a1a1]'>India</p>
+            {/* Horizontal Bar */}
+            <div className="flex space-x-3 text-[#a1a1a1] border border-[#636363] mt-3"></div>
+            <div className='flex justify-between'>
+            <div className='flex space-x-5 text-[#a1a1a1] mt-3 ml-5'>
+              <p className='text-sm'>About</p>
+              <p className='text-sm'>Advertising</p>
+              <p className='text-sm'>Business</p>
+              <p className='text-sm'>How Search Works</p>
+            </div>
+            <div className='flex space-x-6 mr-5'>
+              <p className='text-sm mt-3'>Privacy</p>
+              <p className='text-sm mt-3'>Terms</p>
+              <p className='text-sm mt-3'>Settings</p>
+            </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )
