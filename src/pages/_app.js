@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }) {
         <meta charSet="utf-8" />
         <title>HelloFaizan - Software Enthusiast</title>
         {/* favicon */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/faizan.png" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta name="theme-color" content="#171717" />
         <meta
@@ -18,14 +18,14 @@ export default function App({ Component, pageProps }) {
         />
         <meta name="description" content="HelloFaizan - Send message to HelloFaizan" />
         <meta name="author" content="Hello Faizan" />
-        <meta property="og:title" content="Drop a message to HelloFaizan" />
+        <meta property="og:title" content="HelloFaizan Redesigning" />
         <meta
           property="og:description"
-          content="HelloFaizan is a liberal person who loves to share his knowledge with others."
+          content="HelloFaizan redesigned every website and make them more beautiful and easy to use."
         />
         <meta
           property="og:image"
-          content="/dc.png"
+          content="/faizan.png"
         />
         <link rel="apple-touch-icon" href="/faizan.png" />
       </Head>
