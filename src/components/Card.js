@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = (props) => {
     return (
-        <div className="block rounded-xl border dark:border-gray-800 dark:bg-[#171717] bg-slate-200 p-8 hover:shadow-md md:w-[20rem] mt-3 mx-2 mb-2">
+        <div className="block rounded-xl border dark:border-gray-800 dark:bg-[#171717] bg-slate-200 p-8 hover:shadow-md md:w-[20rem] mt-3 mx-3 md:mx-2 mb-2">
 
             <i className={`bi bi-${props.item.icon} h-10 w-10 text-blue-500`}></i>
 

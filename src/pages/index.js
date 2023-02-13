@@ -17,7 +17,7 @@ const Home = ({data}) => {
   return (
     <>
       <div className="flex flex-col items-center min-h-screen w-full">
-        <div className="flex flex-col items-start md:container md:w-4/6">
+        <div className="flex flex-col items-start md:container justify-center md:w-4/6">
           <h1 className="text-3xl font-bold mt-5 ml-3">Hello, I&apos;m Faizan</h1>
           <p className="mt-3 ml-3 text-1xl">
             In this series I am gonna <span className="text-blue-600">redesign </span> every <span className="text-blue-600">Website</span> using Tailwinds and NextJS
