@@ -29,7 +29,7 @@ export default function App({ Component, pageProps }) {
         />
         <link rel="apple-touch-icon" href="/faizan.png" />
       </Head>
-            <div className="text-black dark:text-white flex flex-row w-full h-full bg-gradient-to-bl from-white to-[#e0e0e0] dark:from-[#171717] dark:to-[#1c1c1c] min-h-screen">
+            <div className="text-black dark:text-white w-full bg-[#202124] min-h-screen">
               <Component {...pageProps} />
             </div>
     </>
