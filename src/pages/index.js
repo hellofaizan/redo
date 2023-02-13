@@ -5,7 +5,7 @@ import Card from '../components/Card'
 const inter = Inter({ subsets: ['latin'] })
 
 export const getStaticProps = async () => {
-  const res = await fetch(process.env.NEXT_PUBLIC_API_URL)
+  const res = await fetch("https://api.npoint.io/4a8d62649d30ab3f091e")
   const data = await res.json()
 
   return {
