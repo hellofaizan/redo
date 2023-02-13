@@ -6,7 +6,7 @@ const Card = (props) => {
 
             <i className={`bi bi-${props.item.icon} h-10 w-10 text-blue-500`}></i>
 
-            <h3 className="mt-3 text-xl font-bold text-black dark:text-white hover:text-blue-500 cursor-pointer"><a href={`ttps://redo.hellofaizan.me/${props.item.word}`}>{props.item.word} Clone <i className="bi bi-box-arrow-up-right"></i></a></h3>
+            <h3 className="mt-3 text-xl font-bold text-black dark:text-white hover:text-blue-500 cursor-pointer"><a href={`https://redo.hellofaizan.me/${props.item.word}`}>{props.item.word} Clone <i className="bi bi-box-arrow-up-right"></i></a></h3>
 
             <p className="mt-4 text-sm dark:text-gray-300 text-gray-700">
                 {props.item.description}
