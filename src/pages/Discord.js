@@ -1,5 +1,5 @@
 import React from 'react'
-import { Fragment } from 'react'
+import { Fragment } from 'react/cjs/react.development'
 
 const Discord = () => {
   return (
