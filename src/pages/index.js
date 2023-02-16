@@ -9,7 +9,10 @@ export const getStaticProps = async () => {
   const data = await res.json()
 
   return {
-    props: { data },
+    props: {
+       data,
+       fallback: 'blocking'
+      },
   }
 }
 
