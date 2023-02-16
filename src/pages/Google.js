@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { useRef, useState } from "react";
 import { useRouter } from 'next/router'
+import Link from 'next/link';
 
 const Discord = () => {
   const router = useRouter()
@@ -71,9 +72,13 @@ const Discord = () => {
         {/* Footer */}
         <div className="absolute bottom-0 bg-[#171717] w-screen py-3">
           <div className="flex flex-col">
+            <div className="flex justify-between">
             <p className='ml-5 text-[#a1a1a1]'>India</p>
+            <p className='text-[#a1a1a1] mr-5'>Designed by <Link href={`https://www.hellofaizan.me`} target="_blank" ><span className='text-[#ff3131] cursor-pointer'>HelloFaizan</span></Link> </p>
+            </div>
             {/* Horizontal Bar */}
             <div className="flex space-x-3 text-[#a1a1a1] border border-[#636363] mt-3"></div>
+            {/* Bottom Text */}
             <div className='flex justify-between'>
             <div className='flex space-x-5 text-[#a1a1a1] mt-3 ml-5'>
               <p className='text-sm'>About</p>
@@ -81,7 +86,7 @@ const Discord = () => {
               <p className='text-sm'>Business</p>
               <p className='text-sm'>How Search Works</p>
             </div>
-            <div className='flex space-x-6 mr-5'>
+            <div className='flex space-x-6 text-[#a1a1a1] mr-5'>
               <p className='text-sm mt-3'>Privacy</p>
               <p className='text-sm mt-3'>Terms</p>
               <p className='text-sm mt-3'>Settings</p>
