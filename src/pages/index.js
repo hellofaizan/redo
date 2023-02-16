@@ -17,7 +17,6 @@ const Home = () => {
       .then((data) => {
         setData(data);
         setLoading(false);
-        console.log(data);
       });
   }, []);
 
@@ -32,14 +31,14 @@ const Home = () => {
     <>
       <div className="flex flex-col items-center min-h-screen w-full">
         <div className="flex flex-col items-start md:container justify-center md:w-4/6">
-          <h1 className="text-3xl font-bold mt-5 ml-3">Hello👋 I&apos;m Faizan</h1>
-          <p className="mt-3 ml-3 text-1xl">
+          <h1 className="text-3xl font-bold mt-5 ml-4">Hello👋 I&apos;m Faizan</h1>
+          <p className="mt-3 ml-4 text-1xl">
             In this series I am gonna <span className="text-blue-600">redesign </span> every <span className="text-blue-600">Website</span> using Tailwinds and NextJS
           </p>
         </div>
 
 
-        <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 flex-row pb-5 mt-5">
+        <div className="relative justify-center items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 flex-row pb-5 mt-5">
           {data.map((item) => (
             <Card key={item.id} item={item} />
           ))}

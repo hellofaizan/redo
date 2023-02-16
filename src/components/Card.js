@@ -13,12 +13,12 @@ const Card = (props) => {
                 {props.item.description}
             </p>
             <a
-                class="hover:bg-[#333] flex w-fit rounded-md dark:bg-[#222] bg-[#141415] px-6 py-2 mt-4 text-sm font-medium text-white"
+                className="hover:bg-[#333] flex w-fit rounded-md dark:bg-[#222] bg-[#141415] px-6 py-2 mt-4 text-sm font-medium text-white"
                 href={`https://github.com/hellofaizan/redo/tree/main/src/pages/${props.item.word}.js`}
                 target="_blank"
                 rel="noreferrer"
             >
-                View on GitHub <i class="bi bi-github ml-3"></i>
+                View on GitHub <i className="bi bi-github ml-3"></i>
             </a>
         </div>
     )
