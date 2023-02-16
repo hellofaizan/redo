@@ -1,22 +1,33 @@
 import React from 'react'
 import { Inter } from '@next/font/google'
 import Card from '../components/Card'
+import { useState, useEffect } from 'react'
+import Image from 'next/image'
 
-const inter = Inter({ subsets: ['latin'] })
+const Home = () => {
+  const [data, setData] = useState(null);
+  const [isLoading, setLoading] = useState(false);
 
-export const getServerSideProps = async () => {
-  const res = await fetch("https://api.npoint.io/4a8d62649d30ab3f091e")
-  const data = await res.json()
+  useEffect(() => {
+    setLoading(true);
+    fetch('https://api.npoint.io/4a8d62649d30ab3f091e', {
+      method: 'GET',
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data);
+        setLoading(false);
+        console.log(data);
+      });
+  }, []);
 
-  return {
-    props: {
-       data,
-       fallback: 'blocking'
-      },
-  }
-}
+  if (isLoading) return <div className='w-screen h-screen flex justify-center items-center'>
+    <Image src={"/faizan.png"} width={60} height={60} alt="HelloFaizan Splach Screen Logo"></Image>
+  </div>
 
-const Home = ({data}) => {
+  if (!data) return <div className='w-screen h-screen flex justify-center items-center'>
+    <Image src={"/faizan.png"} width={60} height={60} alt="HelloFaizan Splach Screen Logo"></Image>
+  </div>
   return (
     <>
       <div className="flex flex-col items-center min-h-screen w-full">
@@ -26,13 +37,13 @@ const Home = ({data}) => {
             In this series I am gonna <span className="text-blue-600">redesign </span> every <span className="text-blue-600">Website</span> using Tailwinds and NextJS
           </p>
         </div>
-        
+
 
         <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 flex-row pb-5 mt-5">
           {data.map((item) => (
             <Card key={item.id} item={item} />
           ))}
-          
+
         </div>
       </div>
 
