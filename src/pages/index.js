@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch('https://api.npoint.io/4a8d62649d30ab3f091e', {
+    fetch('https://api.npoint.io/d279ab83377f1d7e6177', {
       method: 'GET',
     })
       .then((res) => res.json())
